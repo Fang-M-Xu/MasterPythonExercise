@@ -21,5 +21,27 @@ dog['legs'] = 4
 dog['age'] = 2
 print(dog)
 student={
-    ''
+    'first_name':'Jack',
+    'last_name':'Potter',
+    'gender':'M',
+    'age':22,
+    'marital status':False,
+    'skills':['Python','Java','HTML5'],
+    'country':'China',
+    'city':'Yunnan',
+    'address':'New Building'
 }
+print(student, len(student))
+skills=student.get('skills')
+print(skills,type(skills))
+skills.append('HTTP')
+print(student)
+print(student.keys())
+print(student.values())
+
+student_tuple=student.items()
+print(student_tuple)
+
+student.popitem()
+print(student)
+del student
